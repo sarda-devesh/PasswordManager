@@ -1,0 +1,14 @@
+{
+  "name": "passwordmanager",
+  "version": "1.0.0",
+  "description": "A project that uses MYSQL in Node to store passwords",
+  "main": "main.js",
+  "scripts": {
+    "test": "node main.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
