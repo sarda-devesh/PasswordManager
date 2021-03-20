@@ -23,7 +23,7 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
+label { display:block }
 .App-link {
   color: #61dafb;
 }
@@ -35,4 +35,22 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+#outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+}
+
+.buttons-flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding:0% 25% 0% 25%;
 }
