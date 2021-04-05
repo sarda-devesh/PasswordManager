@@ -6,6 +6,8 @@ var app = express();
 app.use(express.json()); 
 app.use(cors());
 
+const port_id = 8080; 
+
 app.post('/', (req, res) => {
     var user_id = req.body.user; var label = req.body.label;
     manager.get_password(user_id, label, (result) => {
@@ -41,7 +43,7 @@ app.delete('/', (req, res) => {
     });
 });
 
-var server = app.listen(8080, () => {
+var server = app.listen(port_id, () => {
     var host = server.address().address;
     var port = server.address().port;
     console.log('running at http://' + host + ':' + port);

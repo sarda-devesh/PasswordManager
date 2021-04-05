@@ -8,7 +8,8 @@ function App() {
   const [password, setPassword] = React.useState('');
   const [displayMessage, setDisplayMessage] = React.useState('');
 
-  const http_host = "http://localhost:8080/";
+  const port_id = 8080; 
+  const http_host = "http://localhost:" + port_id +  "/";
 
   function serverConnection(type, body_info) {
     setDisplayMessage("Processing");
